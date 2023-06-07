@@ -1,10 +1,8 @@
 //MarkK. <@:D 6/7/2023
 //Chessboard V1.0 
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 
 int main(void){
     
@@ -24,18 +22,18 @@ for(int i = 0;i<8;i++){
 for(int m = 0;m<8;m++){
     chessboard[1][m] = "[bPN]";
     chessboard[6][m] = "[wPN]";
-
 }
+
 chessboard[0][0] = chessboard[0][7] = "[bRK]";chessboard[7][0] = chessboard[7][7] = "[wRK]";//ROOK
 chessboard[0][1] = chessboard[0][6] = "[bKT]";chessboard[7][1] = chessboard[7][6] = "[wKT]";//KNIGHT
 chessboard[0][2] = chessboard[0][5] = "[bBP]";chessboard[7][2] = chessboard[7][5] = "[wBP]";//BISHOP
 chessboard[0][3] = "[bQN]";chessboard[7][3] = "[wQN]";//Queen
 chessboard[0][4] = "[bKG]";chessboard[7][4] = "[wKG]";//King
 
-printBoard(chessboard);
+printBoard(chessboard);//Function Called
 
     return 0;
-}
+}//End of Main
 
 //Print Chess Board Function 
 char printBoard(char ***chessboard){
@@ -48,7 +46,7 @@ char printBoard(char ***chessboard){
     
         }
     }
-}
+}//End of printBoard
 
 
 //REF
